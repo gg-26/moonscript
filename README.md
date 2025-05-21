@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Moonscript
+
+A simple scripting language REPL (Read-Eval-Print Loop) built with TypeScript and Deno. Moonscript features a custom lexer, parser, and interpreter for basic arithmetic expressions and null literals.
+
+## Features
+- Custom language parser and interpreter
+- Supports numeric literals, null, and basic arithmetic (+, -, *, /, %)
+- REPL interface for interactive coding
+- Written in TypeScript, runs on Deno
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- [Deno](https://deno.com/) installed
 
+### Running the REPL
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+deno run --allow-read main.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You will see a prompt:
+```
+Repl v0.1
+> 
+```
+Type expressions like `1 + 2 * 3` or `null` and see the result. Type `exit` to quit.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
+```
+frontend/
+  lexer.ts      # Tokenizes input
+  parser.ts     # Parses tokens into AST
+  ast.ts        # AST node definitions
+runtime /
+  interpreter.ts # Evaluates AST nodes
+main.ts         # Entry point and REPL
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## Learn More
+## License
+[MIT](LICENSE)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+Project by team titans. Feel free to reach out for questions or suggestions.
