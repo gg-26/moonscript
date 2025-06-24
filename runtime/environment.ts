@@ -8,16 +8,14 @@ import {
 
 export function createGlobalEnv() {
 	const env = new Environment();
-	// Create Default Global Enviornment
 	env.declareVar("true", MK_BOOL(true), true);
 	env.declareVar("false", MK_BOOL(false), true);
 	env.declareVar("null", MK_NULL(), true);
 
-	// Define a native builtin method
 	env.declareVar(
 		"shine",
 		MK_NATIVE_FN((args, scope) => {
-			console.log(...args);
+			console.log("🌙", ...args);
 			return MK_NULL();
 		}),
 		true
