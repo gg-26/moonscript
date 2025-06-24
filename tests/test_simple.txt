@@ -1,0 +1,6 @@
+star add(x, y) {
+  x + y
+}
+
+moon result = add(5, 3);
+shine(result) 

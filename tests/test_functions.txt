@@ -1,0 +1,30 @@
+star add(x, y) {
+  x + y
+}
+
+moon result = add(5, 3);
+shine(result)
+
+star greet(name) {
+  shine("Hello, " + name)
+}
+
+greet("Moonscript")
+
+star multiply(a, b) {
+  a * b
+}
+
+moon product = multiply(4, 7);
+shine(product)
+
+star square(x) {
+  x * x
+}
+
+star cube(x) {
+  x * x * x
+}
+
+shine(square(6))
+shine(cube(3)) 

@@ -1,0 +1,12 @@
+star makeAdder (offset) {
+
+  star add (x, y)  {
+    x + y + offset
+  }
+
+  add
+}
+
+const adder = makeAdder(1);
+
+shine(adder(10, 5))

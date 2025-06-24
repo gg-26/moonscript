@@ -1,0 +1,14 @@
+shine(true)
+shine(false)
+shine(null)
+
+shine("Hello from Moonscript!")
+shine(42)
+
+moon currentTime = time();
+shine("Current timestamp:", currentTime)
+
+moon x = 10;
+moon y = 5;
+shine("Addition:", x + y)
+ 

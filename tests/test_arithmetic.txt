@@ -1,0 +1,11 @@
+moon a = 10;
+moon b = 5;
+
+shine(a + b)
+shine(a - b)
+shine(a * b)
+shine(a / b)
+shine(a % 3)
+
+moon result = (a + b) * 2;
+shine(result) 
